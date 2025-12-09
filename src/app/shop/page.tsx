@@ -18,6 +18,7 @@ function ShopContent() {
     const [sort, setSort] = useState("featured");
 
     const categoryParam = searchParams.get("category");
+    const searchParam = searchParams.get("search");
 
     useEffect(() => {
         let result = [...products];
@@ -25,6 +26,16 @@ function ShopContent() {
         // Filter by category
         if (categoryParam) {
             result = result.filter((p) => p.category.toLowerCase().replace(/ & /g, "-").replace(/ /g, "-") === categoryParam);
+        }
+
+        // Filter by search
+        if (searchParam) {
+            const query = searchParam.toLowerCase();
+            result = result.filter((p) => 
+                p.name.toLowerCase().includes(query) || 
+                p.description.toLowerCase().includes(query) ||
+                p.category.toLowerCase().includes(query)
+            );
         }
 
         // Sort
@@ -38,7 +49,7 @@ function ShopContent() {
         }
 
         setFilteredProducts(result);
-    }, [categoryParam, sort]);
+    }, [categoryParam, searchParam, sort]);
 
     const handleCategoryChange = (slug: string | null) => {
         if (slug) {

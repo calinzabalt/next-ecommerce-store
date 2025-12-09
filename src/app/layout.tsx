@@ -5,6 +5,7 @@ import { CartProvider } from "@/context/CartContext";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CartDrawer } from "@/components/layout/CartDrawer";
+import { PreviewNotice } from "@/components/PreviewNotice";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -20,7 +21,6 @@ export const metadata: Metadata = {
   title: "Modern E-commerce Store",
   description: "A premium shopping experience built with Next.js",
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -36,6 +36,7 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <Footer />
           <CartDrawer />
+          <PreviewNotice />
         </CartProvider>
       </body>
     </html>

@@ -25,8 +25,19 @@ export function Footer() {
                                 <span className="sr-only">Facebook</span>
                             </Button>
                             <Button variant="ghost" size="icon" className="h-8 w-8">
-                                <Twitter className="h-4 w-4" />
-                                <span className="sr-only">Twitter</span>
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    className="h-4 w-4"
+                                >
+                                    <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                                    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                                </svg>
+                                <span className="sr-only">X (formerly Twitter)</span>
                             </Button>
                             <Button variant="ghost" size="icon" className="h-8 w-8">
                                 <Instagram className="h-4 w-4" />

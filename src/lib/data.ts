@@ -70,7 +70,7 @@ export const products: Product[] = [
         description: "Illuminate your workspace with this sleek, adjustable desk lamp. LED technology for energy efficiency.",
         price: 45.00,
         category: "Home & Living",
-        images: ["https://images.unsplash.com/photo-1507473888900-52e1adad5420?auto=format&fit=crop&q=80&w=800"],
+        images: ["https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?auto=format&fit=crop&q=80&w=800"],
     },
     {
         id: "6",
@@ -81,6 +81,31 @@ export const products: Product[] = [
         images: ["https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=800"],
         trending: true,
     },
+    {
+        id: "7",
+        name: "Smart Watch",
+        description: "Stay connected and track your fitness with this advanced smart watch. Features heart rate monitoring and GPS.",
+        price: 199.99,
+        category: "Electronics",
+        images: ["https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&q=80&w=800"],
+        trending: true,
+    },
+    {
+        id: "8",
+        name: "Leather Wallet",
+        description: "Handcrafted from premium full-grain leather. Slim design with RFID protection.",
+        price: 49.99,
+        category: "Accessories",
+        images: ["https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&q=80&w=800"],
+    },
+    {
+        id: "9",
+        name: "Ceramic Vase",
+        description: "Minimalist ceramic vase, perfect for modern home decor. Hand-thrown and glazed.",
+        price: 35.00,
+        category: "Home & Living",
+        images: ["https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&q=80&w=800"],
+    },
 ];
 
 export const blogPosts: BlogPost[] = [
@@ -89,7 +114,7 @@ export const blogPosts: BlogPost[] = [
         title: "The Future of Smart Home Technology",
         excerpt: "Discover how smart devices are transforming the way we live and interact with our homes.",
         date: "Oct 15, 2023",
-        imageUrl: "https://images.unsplash.com/photo-1558002038-10917738179d?auto=format&fit=crop&q=80&w=800",
+        imageUrl: "https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?auto=format&fit=crop&q=80&w=800",
         slug: "future-smart-home",
     },
     {
